@@ -1636,7 +1636,7 @@ img.mfp-img {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  background-image: url('/assets/image/content.png');
+  background-image: url('../image/content.png');
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -1774,7 +1774,7 @@ img.mfp-img {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  background-image: url('/assets/image/title.jpg');
+  background-image: url('../image/title.jpg');
   background-size: auto;
   background-position: center top;
   background-repeat: no-repeat;
