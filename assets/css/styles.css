@@ -8201,7 +8201,7 @@ hr {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
-  top: 20%;
+  top: 5%;
 }
 .modal-dialog {
   background: #fefefe;
@@ -8222,11 +8222,11 @@ hr {
   transition: transform 0.3s ease-out;
 }
 .modal-body {
-  padding: 20px;
+  //padding: 20px;
 }
 .modal-header,
 .modal-footer {
-  padding: 10px 20px;
+  //padding: 10px 20px;
 }
 .modal-header {
   border-bottom: #eee solid 1px;
