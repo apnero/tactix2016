@@ -138,7 +138,8 @@ body {
   }
 }
 .moto-widget-text-content {
-  padding: 0 1px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .moto-align-left {
   text-align: left;
@@ -3043,7 +3044,7 @@ img.mfp-img {
   font-style: normal;
   font-family: arial, helvetica, sans-serif;
   color: #5a5c6d;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0px;
 }
