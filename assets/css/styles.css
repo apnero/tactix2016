@@ -140,6 +140,7 @@ body {
 .moto-widget-text-content {
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 20px;
 }
 .moto-align-left {
   text-align: left;
