@@ -138,6 +138,9 @@ body {
   }
 }
 .moto-widget-text-content {
+  padding: 0px;
+}
+.moto-widget-text-content2 {
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 20px;
