@@ -325,13 +325,27 @@
     </div> -->
     <div class="modal-body">
       <img src="assets/image/chris.jpg" class="moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
+      <h1 class="word">Velocity.js</h1>
     </div>
     <div class="modal-footer">
       <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
     </div>
     </div>
-  </div>
 </div>
+
+    
+
+
+
+
+
+
+<!-- <div style="visibility: false;">
+  <h1>
+    hello
+  </h1>
+</div> -->
+
 <!-- /Modal -->
 <div class="modal" id="modal-two" aria-hidden="true">
   <div class="modal-dialog">
@@ -347,6 +361,12 @@
     </div>
     </div>
   </div>
+
+
+
+</div>
+
+  
 </div>
 <!-- /Modal -->
 
@@ -518,7 +538,7 @@
                 </div>
 
               </div> -->
-              <div data-animation="fadeInUp" class="moto-widget moto-widget-text moto-preset-default                     wow fadeInUp moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="text" data-preset="default"
+          <!--     <div data-animation="fadeInUp" class="moto-widget moto-widget-text moto-preset-default                     wow fadeInUp moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="text" data-preset="default"
               data-spacing="sasa" style="visibility: hidden; animation-name: none;">
                 <div class="moto-widget-text-content moto-widget-text-editable">
                   <p style="text-align: center;" class="moto-text_system_4">
@@ -526,7 +546,7 @@
                     <br>
                   </p>
                 </div>
-              </div>
+              </div> -->
               <div class="moto-widget moto-widget-spacer moto-preset-default" data-widget="spacer" data-preset="default" data-spacing="">
                 <div class="moto-widget-spacer-block" style="height: 16px;"></div>
               </div>
@@ -678,18 +698,18 @@
               <div class="moto-widget moto-widget-text moto-preset-default        moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="text" data-preset="default" data-spacing="lasa">
                 <div class="moto-widget-text-content moto-widget-text-editable">
                   <p style="text-align: center;" class="moto-text_system_1">
-                    <span class="moto-color3_4">PERSONAL TRAINER</span>
+                    <span class="moto-color3_4">Fight TactiX</span>
                     <br>
                   </p>
                 </div>
               </div>
               <div class="moto-widget moto-widget-text moto-preset-default       moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="text" data-preset="default" data-spacing="aala">
-                <div class="moto-widget-text-content moto-widget-text-editable">
+              <!--   <div class="moto-widget-text-content moto-widget-text-editable">
                   <p style="text-align: center;" class="moto-text_system_6">
                     <span class="moto-color3_4">© 2015 | <a class="moto-link" data-action="pages" data-id="7" href="/privacy-policy/">PRIVACY POLICY</a></span>
                     <br>
                   </p>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -708,7 +728,7 @@
 
 
  <script src="assets/js/website.assets.min.js" type="text/javascript" data-cfasync="false"></script>
-    <script type="text/javascript" data-cfasync="false">
+<!--     <script type="text/javascript" data-cfasync="false">
     var websiteConfig = websiteConfig || {};
     websiteConfig.address = '/';
     websiteConfig.apiUrl = '/api.php';
@@ -718,13 +738,20 @@
       "topOffset": 300,
       "animationTime": 500
     };
-  </script>
-
+  </script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js"></script>
   <script src="assets/js/website.min.js" type="text/javascript" data-cfasync="false"></script>
 
 
 
+<script>
+  $('.word')
+      .velocity('transition.fadeIn');
 
+</script>
 
 
 </body>
