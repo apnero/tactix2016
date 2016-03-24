@@ -325,46 +325,63 @@
     </div> -->
     <div class="modal-body">
       <img src="assets/image/chris.jpg" class="moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
-      <h1 class="word">Velocity.js</h1>
+      <h1 class="word" id="modalone_first">From a young age Chris was passionate about sports and athletic player development. Raised in Newtown CT, he was a multi sport athlete. While attending Sacred Heart University he became fascinated with the security and safety field. He continued his education and began extensive training in executive protection and advanced security operations.</h1>
+      <h1 class="word" id="modalone_second">In 2002 he began providing security coverage for many well-known celebrities, as well as corporate executives and former government officials. Chris has had the great opportunity to extensively travel and has provided his services to clients all over the world.</h1>
+      <h1 class="word" id="modalone_third" >Adding to his credentials, Chris is certified through the Israeli Krav Maga Association (Gidon System) as well as Nir Maman’s CT707 Israeli Special Forces Krav Maga. In 2012 he opened his first school to begin teaching Israeli Krav Maga to men and women in CT.</h1>
+       <p id="modalone_button_first" class="biobutton" >Next</p>  <!--CHANGED TO "#close"-->
+      <p id="modalone_button_second" class="biobutton"  >Next</a> 
+      <p id="modalone_button_third" class="biobutton" >Next</a> 
     </div>
     <div class="modal-footer">
+
       <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
     </div>
     </div>
 </div>
 
-    
 
-
-
-
-
-
-<!-- <div style="visibility: false;">
-  <h1>
-    hello
-  </h1>
-</div> -->
-
-<!-- /Modal -->
 <div class="modal" id="modal-two" aria-hidden="true">
   <div class="modal-dialog">
-<!--     <div class="modal-header">
-      <h2>Modal in CSS?</h2>
-      <a href="#close" class="btn-close" aria-hidden="true">×</a> 
-    </div> -->
-    <div class="modal-body">
-        <p>Click <a href="http://www.fighttactix.com/team.html">Here</a> To Download the App</p>
+
+    <div class="modal-body training">
+        <h1 class="trainingword" id="t1">Group Training</h1>
+        <p class="trainingword" id="t2">Two hour classes which focus on the mental and physical apsects of Krav Maga self defense. Each class will motivate, test and condition you to have the skills to react quicky and effectively against assault.</p>
+        <br>
+        <h1 class="trainingword" id="t3">Individual Instruction</h1>
+        <p class="trainingword" id="t4">One hour private instruction tailored to your specific skill level and goals. Ask about free group training with purchase of private instruction.</p>
+
     </div>
     <div class="modal-footer">
       <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
     </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-three" aria-hidden="true">
+  <div class="modal-dialog">
+
+    <div class="modal-body">
+        <p>Click <a href="http://www.fighttactix.com/team.html">Here</a> Schedule</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
     </div>
   </div>
-
-
-
 </div>
+
+<div class="modal" id="modal-four" aria-hidden="true">
+  <div class="modal-dialog">
+
+    <div class="modal-body">
+        <p>Click <a href="http://www.fighttactix.com/team.html">Here</a> Contact</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
+    </div>
+  </div>
+</div>
+
+
 
   
 </div>
@@ -431,7 +448,7 @@
                 style="visibility: hidden; animation-name: none;">
 
 
-                  <a href="#modal-one" data-action="page" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
+                  <a href="#modal-one" data-action="page" id="modalone" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
                     <span class="fa moto-widget-theme-icon"></span>
                     <span class="moto-widget-button-label">READ MORE</span>
                   </a>
@@ -457,7 +474,7 @@
                 style="visibility: hidden; animation-name: none;">
 
 
-                  <a href="/more/" data-action="page" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
+                  <a href="#modal-two" data-action="page" id="modaltwo" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
                     <span class="fa moto-widget-theme-icon"></span>
                     <span class="moto-widget-button-label">READ MORE</span>
                   </a>
@@ -486,7 +503,7 @@
                 style="visibility: hidden; animation-name: none;">
 
 
-                  <a href="#modal-two" target="__blank" data-action="page" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
+                  <a href="#modal-three" target="__blank" id="modalthree" data-action="page" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
                     <span class="fa moto-widget-theme-icon"></span>
                     <span class="moto-widget-button-label">READ MORE</span>
                   </a>
@@ -512,7 +529,7 @@
                 style="visibility: hidden; animation-name: none;">
 
 
-                  <a href="/more/" data-action="page" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
+                  <a href="#modal-four" data-action="page" id="modalfour" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
                     <span class="fa moto-widget-theme-icon"></span>
                     <span class="moto-widget-button-label">READ MORE</span>
                   </a>
@@ -748,8 +765,66 @@
 
 
 <script>
-  $('.word')
-      .velocity('transition.fadeIn');
+//   $( "#modal-one" ).on('show', function() {
+//     alert( "Handler for .click() called." );
+//   }).on('hide', function() {
+//     alert( "Handler for .click() called." );
+//    });
+
+// $(document).on('hide.bs.modal','#modal-one', function () {
+//                 alert('');
+//  //Do stuff here
+// });
+
+// $('#modal-one').on('hidden.bs.modal', function () {
+//   // do something…
+//                   alert('d');
+// })
+
+$( "#modalone" ).click(function() {
+  $('#modalone_first').delay(1150).velocity('transition.slideUpBigIn');
+  $('#modalone_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
+});
+
+$( "#modalone_button_first" ).click(function() {
+  $('#modalone_button_first').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
+  $('#modalone_first').velocity('transition.slideUpBigOut');
+
+  $('#modalone_second').delay(1150).velocity('transition.slideUpBigIn');
+  $('#modalone_button_second').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
+});
+
+$( "#modalone_button_second" ).click(function() {
+    $('#modalone_button_second').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
+    $('#modalone_second').velocity('transition.slideUpBigOut');
+
+  $('#modalone_third').delay(1150).velocity('transition.slideUpBigIn');
+  $('#modalone_button_third').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
+});
+
+$( "#modalone_button_third" ).click(function() {
+    $('#modalone_button_third').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
+    $('#modalone_third').velocity('transition.slideUpBigOut');
+
+  $('#modalone_first').delay(1150).velocity('transition.slideUpBigIn');
+  $('#modalone_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
+});
+
+$( "#modaltwo" ).click(function() {
+  $('#t1').delay(1000).velocity('transition.slideUpBigIn');
+  $('#t2').delay(1100).velocity('transition.slideUpBigIn');
+    $('#t3').delay(1200).velocity('transition.slideUpBigIn');
+      $('#t4').delay(1300).velocity('transition.slideUpBigIn');
+});
+
+
+
+  // .focus(function() {
+  //   alert( "Handler for .click() called." );
+  //   $('.word')
+  //     .velocity('transition.fadeIn');
+  // });
+
 
 </script>
 
