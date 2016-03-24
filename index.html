@@ -324,7 +324,7 @@
       <a href="#close" class="btn-close" aria-hidden="true">×</a> 
     </div> -->
     <div class="modal-body">
-      <img src="assets/image/chris.jpg" class="moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
+      <img src="assets/image/chris.jpg" class="img-responsive moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
       <h1 class="word" id="modalone_first">From a young age Chris was passionate about sports and athletic player development. Raised in Newtown CT, he was a multi sport athlete. While attending Sacred Heart University he became fascinated with the security and safety field. He continued his education and began extensive training in executive protection and advanced security operations.</h1>
       <h1 class="word" id="modalone_second">In 2002 he began providing security coverage for many well-known celebrities, as well as corporate executives and former government officials. Chris has had the great opportunity to extensively travel and has provided his services to clients all over the world.</h1>
       <h1 class="word" id="modalone_third" >Adding to his credentials, Chris is certified through the Israeli Krav Maga Association (Gidon System) as well as Nir Maman’s CT707 Israeli Special Forces Krav Maga. In 2012 he opened his first school to begin teaching Israeli Krav Maga to men and women in CT.</h1>
@@ -360,8 +360,11 @@
 <div class="modal" id="modal-three" aria-hidden="true">
   <div class="modal-dialog">
 
-    <div class="modal-body">
-        <p>Click <a href="http://www.fighttactix.com/team.html">Here</a> Schedule</p>
+    <div class="modal-body training">
+        <h1 class="trainingword" id="s1">Training Schedule</h1>
+        <p class="trainingword" id="s2">Morning and evening classes are offered weekly. Classes are posted on the “Fight TactiX” app and vary each month around Chris’s travel schedule. Morning classes are from 10am-12pm, Evening classes are from 7pm-9pm and Saturday classes are from 1pm-3pm.</p>
+        <br>
+        <a class="trainingword" id="s3" href="http://www.fighttactix.com/team.html">Click Here For The Fight Tactix Scheduling Mobile App</a>
     </div>
     <div class="modal-footer">
       <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
@@ -782,11 +785,21 @@
 // })
 
 $( "#modalone" ).click(function() {
+    $('#modalone_first').css( "opacity", "0" );
+    $('#modalone_second').css( "opacity", "0" );
+    $('#modalone_third').css( "opacity", "0" );
+    $('#modalone_button_second').css( "opacity", "0" );
+    $('#modalone_button_third').css( "opacity", "0" );
+
   $('#modalone_first').delay(1150).velocity('transition.slideUpBigIn');
   $('#modalone_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
 });
 
 $( "#modalone_button_first" ).click(function() {
+    $('#modalone_first').css( "opacity", "0" );
+    $('#modalone_second').css( "opacity", "0" );
+    $('#modalone_third').css( "opacity", "0" );
+
   $('#modalone_button_first').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
   $('#modalone_first').velocity('transition.slideUpBigOut');
 
@@ -795,6 +808,10 @@ $( "#modalone_button_first" ).click(function() {
 });
 
 $( "#modalone_button_second" ).click(function() {
+    $('#modalone_first').css( "opacity", "0" );
+    $('#modalone_second').css( "opacity", "0" );
+    $('#modalone_third').css( "opacity", "0" );
+
     $('#modalone_button_second').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
     $('#modalone_second').velocity('transition.slideUpBigOut');
 
@@ -803,6 +820,10 @@ $( "#modalone_button_second" ).click(function() {
 });
 
 $( "#modalone_button_third" ).click(function() {
+    $('#modalone_first').css( "opacity", "0" );
+    $('#modalone_second').css( "opacity", "0" );
+    $('#modalone_third').css( "opacity", "0" );
+
     $('#modalone_button_third').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
     $('#modalone_third').velocity('transition.slideUpBigOut');
 
@@ -811,10 +832,18 @@ $( "#modalone_button_third" ).click(function() {
 });
 
 $( "#modaltwo" ).click(function() {
+  $('.trainingword').css( "opacity", "0" );
   $('#t1').delay(1000).velocity('transition.slideUpBigIn');
   $('#t2').delay(1100).velocity('transition.slideUpBigIn');
-    $('#t3').delay(1200).velocity('transition.slideUpBigIn');
-      $('#t4').delay(1300).velocity('transition.slideUpBigIn');
+  $('#t3').delay(1200).velocity('transition.slideUpBigIn');
+  $('#t4').delay(1300).velocity('transition.slideUpBigIn');
+});
+
+$( "#modalthree" ).click(function() {
+  $('.trainingword').css( "opacity", "0" );
+  $('#s1').delay(1000).velocity('transition.slideUpBigIn');
+  $('#s2').delay(1100).velocity('transition.slideUpBigIn');
+  $('#s3').delay(1200).velocity('transition.slideUpBigIn');
 });
 
 
