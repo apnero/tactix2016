@@ -335,7 +335,7 @@
     <!-- <p style="color:#FFF;text-align:left;">&frac14;</p> -->
       <a id="modalone_button_first" class="btn">Next</a>  
       <a id="modalone_button_second" class="btn">Next</a>  
-      <a id="modalone_button_third" href"#close" class="btn">Close</a>  
+      <!-- <a id="modalone_button_third" href"#close" class="btn">Close</a>   -->
     </div>
    </div>
 </div>
@@ -376,7 +376,7 @@
     </div>
     <div class="modal-footer">
       <a id="modaltwo_button_first" class="btn">Next</a>  
-      <a id="modaltwo_button_second" href="#close" class="btn">Close</a>  
+      <!-- <a id="modaltwo_button_second" href="#close" class="btn">Close</a>   -->
       <!-- <a id="modalone_button_third" href"#close" class="btn">Close</a>   -->
       <!-- <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"--> -->
     </div>
@@ -409,17 +409,20 @@
       <img src="assets/image/schedule.jpg" class="img-responsive moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
 		 <h1 class="scheduleword" id="s1">Training Schedule</h1>
         <p class="scheduleword" id="s2">Morning and evening classes are offered weekly. Classes are posted on the “Fight TactiX” app and vary each month around Chris’s travel schedule. Morning classes are from 10am-12pm, Evening classes are from 7pm-9pm and Saturday classes are from 1pm-3pm.</p>
-        <a class="scheduleword" target="__blank" id="s3" href="http://www.fighttactix.com/team.html">Click Here For The Fight Tactix Scheduling Mobile App</a>
+        <a style="padding:4em"  class="scheduleword" target="__blank" id="s3" href="http://www.fighttactix.com/team.html">Click Here For The Fight Tactix Scheduling Mobile App</a>
     </div>
     <div class="modal-footer">
 
-      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
+        <a id="modalthree_button_first" class="btn">Next</a>  
     </div>
    </div>
 </div>
 
 <div class="modal" id="modal-four" aria-hidden="true">
 <div class="modal-dialog ">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">×</a> 
+    </div>
       <div class="modal-body training">
       <form class="form-style-4" action="//formspree.io/fighttactix@gmail.com" method="POST">
 <label for="field1">
@@ -435,7 +438,8 @@
 <span class="contactword" id="c4">Message:</span><textarea name="message" onkeyup="adjust_textarea(this)" required="true"></textarea>
 </label>
 <label>
-       <p id="modalone_button_send" class="contactbutton" >Send</p> 
+		<input id="modalone_button_send" class="contactbutton" type="submit" value="Send">
+       <!-- <p id="modalone_button_send" class="contactbutton" >Send</p>  -->
 </label>
 </form>
       </div>
@@ -479,7 +483,7 @@
                     <p style="text-align: center;" class="moto-text_system_3">
                       <span class="moto-color3_3">(203)</span> 307 5728
                      </p>
-                     <p style="text-align: center;" class="moto-text_system_3">
+                     <p style="font-size: 35px;text-align: center;" class="moto-text_system_3">
                       <span class="moto-color3_3">FightTactiX </span> @gmail.com
                      </p>
                   </div>
@@ -854,7 +858,7 @@ $( "#modalone" ).click(function() {
     $('#modalone_second').css( "opacity", "0" );
     $('#modalone_third').css( "opacity", "0" );
     $('#modalone_button_second').css( "opacity", "0" );
-    $('#modalone_button_third').css( "opacity", "0" );
+    // $('#modalone_button_third').css( "opacity", "0" );
 
   $('#modalone_first').delay(1150).velocity('transition.slideUpBigIn');
   $('#modalone_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
@@ -881,7 +885,7 @@ $( "#modalone_button_second" ).click(function() {
     $('#modalone_second').velocity('transition.slideUpBigOut');
 
   $('#modalone_third').delay(1150).velocity('transition.slideUpBigIn');
-  $('#modalone_button_third').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
+  // $('#modalone_button_third').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
 });
 
 // $( "#modalone_button_third" ).click(function() {
@@ -911,7 +915,7 @@ $( "#modalone_button_second" ).click(function() {
 $( "#modaltwo" ).click(function() {
   $('.trainingword').css( "opacity", "0" );
   $('#modaltwo_button_first').css( "opacity", "0" );
-  $('#modaltwo_button_second').css( "opacity", "0" );
+  // $('#modaltwo_button_second').css( "opacity", "0" );
 
   $('#t1').delay(1000).velocity('transition.slideUpBigIn');
   $('#t2').delay(1100).velocity('transition.slideUpBigIn');
@@ -927,7 +931,7 @@ $( "#modaltwo_button_first" ).click(function() {
   $('#t1').velocity('transition.slideUpBigOut');
   $('#t2').velocity('transition.slideUpBigOut');
   // $('#modalone_second').delay(1150).velocity('transition.slideUpBigIn');
-  $('#modaltwo_button_second').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');  
+  // $('#modaltwo_button_second').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');  
 
     $('#t3').delay(1000).velocity('transition.slideUpBigIn');
 	$('#t4').delay(1100).velocity('transition.slideUpBigIn');  
@@ -943,14 +947,36 @@ $( "#modaltwo_button_first" ).click(function() {
 // 	$('#t2').delay(1100).velocity('transition.slideUpBigIn');  
 // });
 
-
-
 $( "#modalthree" ).click(function() {
   $('.scheduleword').css( "opacity", "0" );
+  $('#modalthree_button_first').css( "opacity", "0" );
+  //$('#modalthree_button_second').css( "opacity", "0" );
+
   $('#s1').delay(1000).velocity('transition.slideUpBigIn');
   $('#s2').delay(1100).velocity('transition.slideUpBigIn');
-  $('#s3').delay(1200).velocity('transition.slideUpBigIn');
+  $('#modalthree_button_first').css( "visibility", "visible" ).delay(1600).velocity('transition.slideUpBigIn');    
 });
+
+$( "#modalthree_button_first" ).click(function() {
+
+
+  $('#modalthree_button_first').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
+  $('#s1').velocity('transition.slideUpBigOut');
+  $('#s2').velocity('transition.slideUpBigOut');
+  // $('#modalone_second').delay(1150).velocity('transition.slideUpBigIn');
+  //$('#modaltwo_button_second').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');  
+
+    $('#s3').delay(1000).velocity('transition.slideUpBigIn');
+});
+
+
+
+// $( "#modalthree" ).click(function() {
+//   $('.scheduleword').css( "opacity", "0" );
+//   $('#s1').delay(1000).velocity('transition.slideUpBigIn');
+//   $('#s2').delay(1100).velocity('transition.slideUpBigIn');
+//   $('#s3').delay(1200).velocity('transition.slideUpBigIn');
+// });
 
 
 $( "#modalfour" ).click(function() {

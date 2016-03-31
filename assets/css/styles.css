@@ -8406,8 +8406,8 @@ p.scheduleword {
 
           .word {
             bottom:0%;
-            padding:1em;
-
+            padding:.9em;
+            line-height: 1.3;
               font-size: 1.1em;
 
           }
