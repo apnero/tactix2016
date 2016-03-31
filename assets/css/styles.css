@@ -8295,6 +8295,31 @@ p.trainingword {
 
 }
 
+
+.scheduleword {
+  // width: 791px;
+  opacity:0;
+ // position:absolute;
+  bottom:7%;
+  padding:1em;
+  // left:50%;
+  text-align: center;
+    font-size: 1.5em;
+    color: rgb(164, 234, 231);
+//   font-size:72px;
+//   color: #000;
+//   font-weight: 300;
+}
+
+
+p.scheduleword {
+  bottom:10%;
+  padding:1em;
+
+    font-size: 1.1em;
+
+}
+
 .biobutton {
 
   // width: 791px;
@@ -8399,6 +8424,23 @@ p.trainingword {
           p.trainingword {
             bottom:7%;
             padding:1em;
+
+              font-size: 1.1em;
+
+          }
+
+           .scheduleword {
+            bottom:37%;
+            padding:.5em;
+
+              font-size: 1.1em;
+
+          }
+
+
+          p.scheduleword {
+            bottom:7%;
+            padding:.5em;
 
               font-size: 1.1em;
 

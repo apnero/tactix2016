@@ -360,10 +360,6 @@
 
 <div class="modal" id="modal-two" aria-hidden="true">
    <div class="modal-dialog biodialog">
-<!--     <div class="modal-header">
-      <h2>Modal in CSS?</h2>
-      <a href="#close" class="btn-close" aria-hidden="true">×</a> 
-    </div> -->
     <div class="modal-body biodialog-body">
       <img src="assets/image/training.jpg" class="img-responsive moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
      	<h1 class="trainingword" id="t1">Group Training</h1>
@@ -378,11 +374,11 @@
 
       <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
     </div>
-    </div>
+   </div>
 </div>
 
 
-
+<!-- 
 <div class="modal" id="modal-three" aria-hidden="true">
   <div class="modal-dialog">
 
@@ -393,9 +389,25 @@
         <a class="trainingword" target="__blank" id="s3" href="http://www.fighttactix.com/team.html">Click Here For The Fight Tactix Scheduling Mobile App</a>
     </div>
     <div class="modal-footer">
-      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
+      <a href="#close" class="btn">Close</a>  
     </div>
   </div>
+</div>
+ -->
+<div class="modal" id="modal-three" aria-hidden="true">
+   <div class="modal-dialog biodialog">
+    <div class="modal-body biodialog-body">
+      <img src="assets/image/schedule.jpg" class="img-responsive moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
+		 <h1 class="scheduleword" id="s1">Training Schedule</h1>
+        <p class="scheduleword" id="s2">Morning and evening classes are offered weekly. Classes are posted on the “Fight TactiX” app and vary each month around Chris’s travel schedule. Morning classes are from 10am-12pm, Evening classes are from 7pm-9pm and Saturday classes are from 1pm-3pm.</p>
+        <br>
+        <a class="scheduleword" target="__blank" id="s3" href="http://www.fighttactix.com/team.html">Click Here For The Fight Tactix Scheduling Mobile App</a>
+    </div>
+    <div class="modal-footer">
+
+      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
+    </div>
+   </div>
 </div>
 
 <div class="modal" id="modal-four" aria-hidden="true">
@@ -917,7 +929,7 @@ $( "#modaltwo_button_second" ).click(function() {
 
 
 $( "#modalthree" ).click(function() {
-  $('.trainingword').css( "opacity", "0" );
+  $('.scheduleword').css( "opacity", "0" );
   $('#s1').delay(1000).velocity('transition.slideUpBigIn');
   $('#s2').delay(1100).velocity('transition.slideUpBigIn');
   $('#s3').delay(1200).velocity('transition.slideUpBigIn');
