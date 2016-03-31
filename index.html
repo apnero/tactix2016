@@ -21,7 +21,7 @@
 
   <meta charset="utf-8">
   <title>Home</title>
-  <link rel="SHORTCUT ICON" href="assets/image/favicon.ico?_build=1452611028" type="image/vnd.microsoft.icon">
+<link rel="shortcut icon" href="shield.png" />
 
 
   <link rel="canonical" href="http://template55643.motopreview.com/">
@@ -364,7 +364,7 @@
         <h1 class="trainingword" id="s1">Training Schedule</h1>
         <p class="trainingword" id="s2">Morning and evening classes are offered weekly. Classes are posted on the “Fight TactiX” app and vary each month around Chris’s travel schedule. Morning classes are from 10am-12pm, Evening classes are from 7pm-9pm and Saturday classes are from 1pm-3pm.</p>
         <br>
-        <a class="trainingword" id="s3" href="http://www.fighttactix.com/team.html">Click Here For The Fight Tactix Scheduling Mobile App</a>
+        <a class="trainingword" target="__blank" id="s3" href="http://www.fighttactix.com/team.html">Click Here For The Fight Tactix Scheduling Mobile App</a>
     </div>
     <div class="modal-footer">
       <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
@@ -373,11 +373,26 @@
 </div>
 
 <div class="modal" id="modal-four" aria-hidden="true">
-  <div class="modal-dialog">
-
-    <div class="modal-body">
-        <p>Click <a href="http://www.fighttactix.com/team.html">Here</a> Contact</p>
-    </div>
+<div class="modal-dialog">
+      <div class="modal-body training">
+      <form class="form-style-4" action="//formspree.io/fighttactix@gmail.com" method="POST">
+<label for="field1">
+<span class="trainingword" id="c1">Name:</span><input type="text" name="name" required="true" />
+</label>
+<label for="field2">
+<span class="trainingword" id="c2">Email:</span><input type="email" name="email" required="false" />
+</label>
+<label for="field3">
+<span class="trainingword" id="c3">Phone:</span><input type="text" name="phone" required="false" />
+</label>
+<label for="field4">
+<span class="trainingword" id="c4">Message:</span><textarea name="message" onkeyup="adjust_textarea(this)" required="true"></textarea>
+</label>
+<label>
+       <p id="modalone_button_send" class="contactbutton" >Send</p> 
+</label>
+</form>
+      </div>
     <div class="modal-footer">
       <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
     </div>
@@ -407,7 +422,7 @@
                 <div data-animation="fadeInUp" class="moto-widget moto-widget-text moto-preset-default                            wow fadeInUp moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="text"
                 data-preset="default" data-spacing="aasa" style="visibility: hidden; animation-name: none;">
                   <div class="moto-widget-text-content moto-widget-text-editable">
-                    <p style="text-align: center;" class="moto-text_system_6">CALL CHRIS AT:
+                    <p style="text-align: center;" class="moto-text_system_6">CONTACT CHRIS AT:
                       <br>
                     </p>
                   </div>
@@ -416,7 +431,11 @@
                 data-preset="default" data-spacing="aama" style="visibility: hidden; animation-name: none;">
                   <div class="moto-widget-text-content moto-widget-text-editable">
                     <p style="text-align: center;" class="moto-text_system_3">
-                      <span class="moto-color3_3">(203)</span> 307 5728</p>
+                      <span class="moto-color3_3">(203)</span> 307 5728
+                     </p>
+                     <p style="text-align: center;" class="moto-text_system_3">
+                      <span class="moto-color3_3">FightTactiX </span> @gmail.com
+                     </p>
                   </div>
                 </div>
               </div>
@@ -506,7 +525,7 @@
                 style="visibility: hidden; animation-name: none;">
 
 
-                  <a href="#modal-three" target="__blank" id="modalthree" data-action="page" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
+                  <a href="#modal-three" id="modalthree" data-action="page" class="moto-widget-button-link moto-size-medium moto-link" data-anchor="" data-size="medium">
                     <span class="fa moto-widget-theme-icon"></span>
                     <span class="moto-widget-button-label">READ MORE</span>
                   </a>
@@ -724,12 +743,12 @@
                 </div>
               </div>
               <div class="moto-widget moto-widget-text moto-preset-default       moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="text" data-preset="default" data-spacing="aala">
-              <!--   <div class="moto-widget-text-content moto-widget-text-editable">
+                <div class="moto-widget-text-content moto-widget-text-editable">
                   <p style="text-align: center;" class="moto-text_system_6">
-                    <span class="moto-color3_4">© 2015 | <a class="moto-link" data-action="pages" data-id="7" href="/privacy-policy/">PRIVACY POLICY</a></span>
+                    <span class="moto-color3_4">Located at S.E.T. Gym | <a class="moto-link" data-action="pages" data-id="7" href="/privacy-policy/">47 West Street, Danbury, CT</a></span>
                     <br>
                   </p>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -847,6 +866,21 @@ $( "#modalthree" ).click(function() {
 });
 
 
+$( "#modalfour" ).click(function() {
+  $('.trainingword').css( "opacity", "0" );
+  $('#modalone_button_send').css( "opacity", "0" );
+  $('#c1').delay(1000).velocity('transition.slideUpBigIn');
+  $('#c2').delay(1100).velocity('transition.slideUpBigIn');
+  $('#c3').delay(1200).velocity('transition.slideUpBigIn');
+  $('#c4').delay(1300).velocity('transition.slideUpBigIn');
+  $('#modalone_button_send').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');  
+});
+
+
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
 
   // .focus(function() {
   //   alert( "Handler for .click() called." );
