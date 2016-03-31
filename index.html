@@ -328,9 +328,9 @@
       <h1 class="word" id="modalone_first">From a young age Chris was passionate about sports and athletic player development. Raised in Newtown CT, he was a multi sport athlete. While attending Sacred Heart University he became fascinated with the security and safety field. He continued his education and began extensive training in executive protection and advanced security operations.</h1>
       <h1 class="word" id="modalone_second">In 2002 he began providing security coverage for many well-known celebrities, as well as corporate executives and former government officials. Chris has had the great opportunity to extensively travel and has provided his services to clients all over the world.</h1>
       <h1 class="word" id="modalone_third" >Adding to his credentials, Chris is certified through the Israeli Krav Maga Association (Gidon System) as well as Nir Maman’s CT707 Israeli Special Forces Krav Maga. In 2012 he opened his first school to begin teaching Israeli Krav Maga to men and women in CT.</h1>
-       <p id="modalone_button_first" class="biobutton" >Next</p>  <!--CHANGED TO "#close"-->
-      <p id="modalone_button_second" class="biobutton"  >Next</a> 
-      <p id="modalone_button_third" class="biobutton" >Next</a> 
+       <p id="modalone_button_first" class="biobutton" >Next</p> 
+      <p id="modalone_button_second" class="biobutton"  >Next</p> 
+      <p id="modalone_button_third" class="biobutton" >Next</p> 
     </div>
     <div class="modal-footer">
 
@@ -340,7 +340,7 @@
 </div>
 
 
-<div class="modal" id="modal-two" aria-hidden="true">
+<!-- <div class="modal" id="modal-two" aria-hidden="true">
   <div class="modal-dialog">
 
     <div class="modal-body training">
@@ -352,10 +352,36 @@
 
     </div>
     <div class="modal-footer">
-      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
+      <a href="#close" class="btn">Close</a> 
     </div>
   </div>
+</div> -->
+
+
+<div class="modal" id="modal-two" aria-hidden="true">
+   <div class="modal-dialog biodialog">
+<!--     <div class="modal-header">
+      <h2>Modal in CSS?</h2>
+      <a href="#close" class="btn-close" aria-hidden="true">×</a> 
+    </div> -->
+    <div class="modal-body biodialog-body">
+      <img src="assets/image/training.jpg" class="img-responsive moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
+     	<h1 class="trainingword" id="t1">Group Training</h1>
+        <p class="trainingword" id="t2">Two hour classes which focus on the mental and physical apsects of Krav Maga self defense. Each class will motivate, test and condition you to have the skills to react quicky and effectively against assault.</p>
+        <br>
+        <h1 class="trainingword" id="t3">Individual Instruction</h1>
+        <p class="trainingword" id="t4">One hour private instruction tailored to your specific skill level and goals. Ask about free group training with purchase of private instruction.</p>
+       <p id="modaltwo_button_first" class="trainingbutton" >Next</p> 
+      <p id="modaltwo_button_second" class="trainingbutton"  >Next</p> 
+    </div>
+    <div class="modal-footer">
+
+      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
+    </div>
+    </div>
 </div>
+
+
 
 <div class="modal" id="modal-three" aria-hidden="true">
   <div class="modal-dialog">
@@ -852,11 +878,43 @@ $( "#modalone_button_third" ).click(function() {
 
 $( "#modaltwo" ).click(function() {
   $('.trainingword').css( "opacity", "0" );
+  $('#modaltwo_button_first').css( "opacity", "0" );
+  $('#modaltwo_button_second').css( "opacity", "0" );
+
   $('#t1').delay(1000).velocity('transition.slideUpBigIn');
   $('#t2').delay(1100).velocity('transition.slideUpBigIn');
-  $('#t3').delay(1200).velocity('transition.slideUpBigIn');
-  $('#t4').delay(1300).velocity('transition.slideUpBigIn');
+  $('#modaltwo_button_first').css( "visibility", "visible" ).delay(1600).velocity('transition.slideUpBigIn');    
+  // $('#t3').delay(1200).velocity('transition.slideUpBigIn');
+  // $('#t4').delay(1300).velocity('transition.slideUpBigIn');
 });
+
+$( "#modaltwo_button_first" ).click(function() {
+
+
+  $('#modaltwo_button_first').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
+  $('#t1').velocity('transition.slideUpBigOut');
+  $('#t2').velocity('transition.slideUpBigOut');
+  // $('#modalone_second').delay(1150).velocity('transition.slideUpBigIn');
+  $('#modaltwo_button_second').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');  
+
+    $('#t3').delay(1000).velocity('transition.slideUpBigIn');
+	$('#t4').delay(1100).velocity('transition.slideUpBigIn');  
+});
+
+$( "#modaltwo_button_second" ).click(function() {
+
+  $('#modaltwo_button_second').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
+    $('#t3').velocity('transition.slideUpBigOut');
+  $('#t4').velocity('transition.slideUpBigOut');
+  //   $('#modalone_second').velocity('transition.slideUpBigOut');
+
+  // $('#modalone_third').delay(1150).velocity('transition.slideUpBigIn');
+  $('#modaltwo_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
+    $('#t1').delay(1000).velocity('transition.slideUpBigIn');
+	$('#t2').delay(1100).velocity('transition.slideUpBigIn');  
+});
+
+
 
 $( "#modalthree" ).click(function() {
   $('.trainingword').css( "opacity", "0" );

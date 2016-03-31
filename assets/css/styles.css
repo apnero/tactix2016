@@ -8236,7 +8236,7 @@ hr {
 
 .modal-dialog {
     width: 48%;
-  background: #fefefe;
+  // background: #fefefe;
   border: #333 solid 1px;
   border-radius: 5px;
   // margin-left: -200px;
@@ -8271,6 +8271,30 @@ hr {
 //   font-weight: 300;
 }
 
+.trainingword {
+  // width: 791px;
+  opacity:0;
+ // position:absolute;
+  bottom:7%;
+  padding:2em;
+  // left:50%;
+  text-align: center;
+    font-size: 1.5em;
+    color: rgb(164, 234, 231);
+//   font-size:72px;
+//   color: #000;
+//   font-weight: 300;
+}
+
+
+p.trainingword {
+  bottom:10%;
+  padding:1em;
+
+    font-size: 1.1em;
+
+}
+
 .biobutton {
 
   // width: 791px;
@@ -8278,6 +8302,22 @@ hr {
   opacity:0;
   position:absolute;
   bottom:6%;
+  padding:5px 20px 5px 20px;
+  left:45%;
+  // left:50%;
+  text-align: center;
+    font-size: 1.1em;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.99);
+}
+
+.trainingbutton {
+
+  // width: 791px;
+  visibility:hidden;
+  opacity:0;
+  position:absolute;
+  bottom:25%;
   padding:5px 20px 5px 20px;
   left:45%;
   // left:50%;
@@ -8311,6 +8351,9 @@ hr {
     text-align: center;
 }
 
+          .biodialog-body{
+            height:100%;
+          }
 
 
 @media screen and (max-width: 1000px) {
@@ -8336,8 +8379,6 @@ hr {
 
 
 
-  
-
           .word {
             bottom:0%;
             padding:1em;
@@ -8346,19 +8387,45 @@ hr {
 
           }
 
-          .biobutton {
-
-            bottom:-5%;
+          .trainingword {
+            bottom:37%;
             padding:1em;
-            left:41%;
+
+              font-size: 1.1em;
+
+          }
+
+
+          p.trainingword {
+            bottom:7%;
+            padding:1em;
+
+              font-size: 1.1em;
+
+          }
+
+
+            .biobutton {
+
+            bottom:-3%;
+            // padding:1em;
+            left:39%;
               font-size: 1.1em;
           }
 
-          .contactbutton {
+            .trainingbutton {
 
-            bottom:-10%;
-            padding:1em;
-            left:41%;
+            bottom:-3%;
+            // padding:1em;
+            left:39%;
+              font-size: 1.1em;
+          }
+
+                    .contactbutton {
+
+            bottom:-7%;
+            // padding:1em;
+            left:39%;
               font-size: 1.1em;
           }
 
@@ -8420,6 +8487,25 @@ hr {
 p.trainingword{
   font-size:1.2em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
