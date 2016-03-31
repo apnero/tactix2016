@@ -8305,20 +8305,29 @@ hr {
 
 
 
-
+.modal-body {
+  //padding: 20px;
+    text-align: center;
+}
 
 @media screen and (max-width: 1000px) {
           .modal-dialog {
               width: 80%;
-           
+           height:80%;
             left: 10%;
             top: -70%;
+              background-color: #000000;
             
+          }
+
+          .modal-body {
+            height:100%;
+            background-color: #000000;
           }
 
 
           .word {
-            bottom:-60%;
+            bottom:0%;
             padding:1em;
 
               font-size: 1.1em;
@@ -8327,7 +8336,7 @@ hr {
 
           .biobutton {
 
-            bottom:-70%;
+            bottom:-5%;
             padding:1em;
             left:43%;
               font-size: 1.1em;
@@ -8348,10 +8357,7 @@ hr {
 
 
 
-.modal-body {
-  //padding: 20px;
-    text-align: center;
-}
+
 .modal-header,
 .modal-footer {
   //padding: 10px 20px;
