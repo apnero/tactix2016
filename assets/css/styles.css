@@ -8265,7 +8265,7 @@ hr {
   // left:50%;
   text-align: center;
     font-size: 1.5em;
-    color: rgb(164, 234, 231);
+    color: #818394;
 //   font-size:72px;
 //   color: #000;
 //   font-weight: 300;
@@ -8280,9 +8280,9 @@ hr {
   // left:50%;
   text-align: center;
     font-size: 1.5em;
-    color: rgb(164, 234, 231);
+    // color: #818394;
 //   font-size:72px;
-//   color: #000;
+  color: #FFF;
 //   font-weight: 300;
 }
 
@@ -8292,7 +8292,7 @@ p.trainingword {
   padding:1em;
 
     font-size: 1.1em;
-
+    color: #818394;
 }
 
 
@@ -8304,10 +8304,10 @@ p.trainingword {
   padding:1em;
   // left:50%;
   text-align: center;
-    font-size: 1.5em;
-    color: rgb(164, 234, 231);
+     font-size: 1.5em;
+   // color: #818394;
 //   font-size:72px;
-//   color: #000;
+  color: #FFF;
 //   font-weight: 300;
 }
 
@@ -8315,7 +8315,7 @@ p.trainingword {
 p.scheduleword {
   bottom:10%;
   padding:1em;
-
+    color: #818394;
     font-size: 1.1em;
 
 }
@@ -8414,8 +8414,8 @@ p.scheduleword {
 
           .trainingword {
             bottom:37%;
-            padding:1em;
-
+            padding:.5em;
+            margin: 0;
               font-size: 1.1em;
 
           }
@@ -8570,7 +8570,7 @@ p.trainingword{
     // font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.1em;
     // color: #fff;
-    color:#000000;
+    color:#818394;
 }
 .form-style-4 label {
     display:block;
@@ -8610,7 +8610,7 @@ p.trainingword{
 .form-style-4 input[type=email]:focus,
 .form-style-4 input[type=email] :focus
 {
-    border-bottom: 1px dashed #D9FFA9;
+    border-bottom: 1px dashed #818394;
 }
 
 .form-style-4 input[type=submit],

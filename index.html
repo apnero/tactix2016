@@ -319,24 +319,25 @@
               <!-- Modal -->
 <div class="modal" id="modal-one" aria-hidden="true">
   <div class="modal-dialog biodialog">
-<!--     <div class="modal-header">
-      <h2>Modal in CSS?</h2>
+    <div class="modal-header">
       <a href="#close" class="btn-close" aria-hidden="true">×</a> 
-    </div> -->
+    </div>
     <div class="modal-body biodialog-body">
       <img src="assets/image/chris.jpg" class="img-responsive moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
       <h1 class="word" id="modalone_first">From a young age Chris was passionate about sports and athletic player development. Raised in Newtown CT, he was a multi sport athlete. While attending Sacred Heart University he became fascinated with the security and safety field. He continued his education and began extensive training in executive protection and advanced security operations.</h1>
       <h1 class="word" id="modalone_second">In 2002 he began providing security coverage for many well-known celebrities, as well as corporate executives and former government officials. Chris has had the great opportunity to extensively travel and has provided his services to clients all over the world.</h1>
       <h1 class="word" id="modalone_third" >Adding to his credentials, Chris is certified through the Israeli Krav Maga Association (Gidon System) as well as Nir Maman’s CT707 Israeli Special Forces Krav Maga. In 2012 he opened his first school to begin teaching Israeli Krav Maga to men and women in CT.</h1>
-       <p id="modalone_button_first" class="biobutton" >Next</p> 
-      <p id="modalone_button_second" class="biobutton"  >Next</p> 
-      <p id="modalone_button_third" class="biobutton" >Next</p> 
+       <!-- <p id="modalone_button_first" class="biobutton" >Next</p>  -->
+      <!-- <p id="modalone_button_second" class="biobutton"  >Next</p>  -->
+      <!-- <p id="modalone_button_third" class="biobutton" >Next</p>  -->
     </div>
     <div class="modal-footer">
-
-      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
+    <!-- <p style="color:#FFF;text-align:left;">&frac14;</p> -->
+      <a id="modalone_button_first" class="btn">Next</a>  
+      <a id="modalone_button_second" class="btn">Next</a>  
+      <a id="modalone_button_third" href"#close" class="btn">Close</a>  
     </div>
-    </div>
+   </div>
 </div>
 
 
@@ -360,6 +361,9 @@
 
 <div class="modal" id="modal-two" aria-hidden="true">
    <div class="modal-dialog biodialog">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">×</a> 
+    </div>
     <div class="modal-body biodialog-body">
       <img src="assets/image/training.jpg" class="img-responsive moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
      	<h1 class="trainingword" id="t1">Group Training</h1>
@@ -367,12 +371,14 @@
         <br>
         <h1 class="trainingword" id="t3">Individual Instruction</h1>
         <p class="trainingword" id="t4">One hour private instruction tailored to your specific skill level and goals. Ask about free group training with purchase of private instruction.</p>
-       <p id="modaltwo_button_first" class="trainingbutton" >Next</p> 
-      <p id="modaltwo_button_second" class="trainingbutton"  >Next</p> 
+       <!-- <p id="modaltwo_button_first" class="trainingbutton" >Next</p>  -->
+      <!-- <p id="modaltwo_button_second" class="trainingbutton"  >Next</p>  -->
     </div>
     <div class="modal-footer">
-
-      <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"-->
+      <a id="modaltwo_button_first" class="btn">Next</a>  
+      <a id="modaltwo_button_second" href="#close" class="btn">Close</a>  
+      <!-- <a id="modalone_button_third" href"#close" class="btn">Close</a>   -->
+      <!-- <a href="#close" class="btn">Close</a>  <!--CHANGED TO "#close"--> -->
     </div>
    </div>
 </div>
@@ -396,11 +402,13 @@
  -->
 <div class="modal" id="modal-three" aria-hidden="true">
    <div class="modal-dialog biodialog">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">×</a> 
+    </div>
     <div class="modal-body biodialog-body">
       <img src="assets/image/schedule.jpg" class="img-responsive moto-widget-image-picture" data-id="88" title="" alt="" draggable="false">
 		 <h1 class="scheduleword" id="s1">Training Schedule</h1>
         <p class="scheduleword" id="s2">Morning and evening classes are offered weekly. Classes are posted on the “Fight TactiX” app and vary each month around Chris’s travel schedule. Morning classes are from 10am-12pm, Evening classes are from 7pm-9pm and Saturday classes are from 1pm-3pm.</p>
-        <br>
         <a class="scheduleword" target="__blank" id="s3" href="http://www.fighttactix.com/team.html">Click Here For The Fight Tactix Scheduling Mobile App</a>
     </div>
     <div class="modal-footer">
@@ -876,17 +884,29 @@ $( "#modalone_button_second" ).click(function() {
   $('#modalone_button_third').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
 });
 
-$( "#modalone_button_third" ).click(function() {
-    $('#modalone_first').css( "opacity", "0" );
-    $('#modalone_second').css( "opacity", "0" );
-    $('#modalone_third').css( "opacity", "0" );
+// $( "#modalone_button_third" ).click(function() {
+//     $('#modalone_first').css( "opacity", "0" );
+//     $('#modalone_second').css( "opacity", "0" );
+//     $('#modalone_third').css( "opacity", "0" );
 
-    $('#modalone_button_third').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
-    $('#modalone_third').velocity('transition.slideUpBigOut');
+//     $('#modalone_button_third').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
+//     $('#modalone_third').velocity('transition.slideUpBigOut');
 
-  $('#modalone_first').delay(1150).velocity('transition.slideUpBigIn');
-  $('#modalone_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
-});
+//   $('#modalone_first').delay(1150).velocity('transition.slideUpBigIn');
+//   $('#modalone_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
+// });
+
+
+
+
+
+
+
+
+
+
+
+
 
 $( "#modaltwo" ).click(function() {
   $('.trainingword').css( "opacity", "0" );
@@ -913,18 +933,15 @@ $( "#modaltwo_button_first" ).click(function() {
 	$('#t4').delay(1100).velocity('transition.slideUpBigIn');  
 });
 
-$( "#modaltwo_button_second" ).click(function() {
+// $( "#modaltwo_button_second" ).click(function() {
 
-  $('#modaltwo_button_second').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
-    $('#t3').velocity('transition.slideUpBigOut');
-  $('#t4').velocity('transition.slideUpBigOut');
-  //   $('#modalone_second').velocity('transition.slideUpBigOut');
-
-  // $('#modalone_third').delay(1150).velocity('transition.slideUpBigIn');
-  $('#modaltwo_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
-    $('#t1').delay(1000).velocity('transition.slideUpBigIn');
-	$('#t2').delay(1100).velocity('transition.slideUpBigIn');  
-});
+//   $('#modaltwo_button_second').css( "visibility", "hidden" ).velocity('transition.slideUpBigOut');
+//     $('#t3').velocity('transition.slideUpBigOut');
+//   $('#t4').velocity('transition.slideUpBigOut');
+//   $('#modaltwo_button_first').css( "visibility", "visible" ).delay(2000).velocity('transition.slideUpBigIn');    
+//     $('#t1').delay(1000).velocity('transition.slideUpBigIn');
+// 	$('#t2').delay(1100).velocity('transition.slideUpBigIn');  
+// });
 
 
 
