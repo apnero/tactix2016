@@ -52,7 +52,7 @@ body {
   color: #4e505f;
 }
 .moto-color3_4 {
-  color: #5a5c6d;
+  color: #858694
 }
 .moto-color3_5 {
   color: #65687b;
@@ -3080,7 +3080,7 @@ img.mfp-img {
   font-weight: 400;
   font-style: normal;
   font-family: arial, helvetica, sans-serif;
-  color: #5a5c6d;
+  color: #818394;
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0px;
@@ -3113,7 +3113,7 @@ img.mfp-img {
 }
 @media (max-width: 479px) {
   .moto-text_normal {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0px;
   }
