@@ -8376,9 +8376,114 @@ p.scheduleword {
     text-align: center;
 }
 
+
+
           .biodialog-body{
             height:100%;
           }
+
+
+          .modal-dialog {
+              // width: 80%;
+           
+            // left: 10%;
+            // top: -70%;
+              
+            
+          }
+
+          .biodialog {
+            height:80%;
+            background-color: #000000;
+          }
+
+
+          .biodialog-body{
+            height:100%;
+          }
+
+
+
+
+          .word {
+            bottom:2%;
+            padding:1.2em;
+              font-size: 1.5em;
+
+          }
+
+          .trainingword {
+            bottom:31%;
+            padding:1.4em;
+            margin: 0;
+              font-size: 1.5em;
+
+          }
+
+
+          p.trainingword {
+            bottom:7%;
+            padding:1.3em;
+
+              font-size: 1.5em;
+
+          }
+
+           .scheduleword {
+            bottom:31%;
+            padding:1.4em;
+            
+              font-size: 1.5em;
+
+          }
+
+
+          p.scheduleword {
+            bottom:7%;
+            padding:1.3em;
+
+              font-size: 1.5em;
+
+          }
+
+
+            .biobutton {
+
+            bottom:-3%;
+            // padding:1em;
+            left:39%;
+              font-size: 1.1em;
+          }
+
+            .trainingbutton {
+
+            bottom:-3%;
+            // padding:1em;
+            left:39%;
+              font-size: 1.1em;
+          }
+
+                    .contactbutton {
+
+            bottom:-7%;
+            // padding:1em;
+            left:39%;
+              font-size: 1.1em;
+          }
+
+        .contactword 
+        {
+          font-size:1.5em;
+         opacity:0;
+        }
+
+
+h1.contactword 
+{
+  color: #FFF;
+  font-size:1.6em;
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -8471,7 +8576,17 @@ p.scheduleword {
               font-size: 1.1em;
           }
 
+        .contactword 
+        {
+          font-size:1.1em;
+         opacity:0;
+        }
 
+
+        h1.contactword 
+        {
+          font-size:1.2em;
+        }
 
 
 }
@@ -8526,17 +8641,8 @@ p.scheduleword {
  opacity:0;
 }
 
-.contactword 
-{
-  font-size:1.1em;
- opacity:0;
-}
 
-h1.contactword 
-{
-  color: #FFF;
-  font-size:1.2em;
-}
+
 
 p.trainingword{
   font-size:1.2em;
