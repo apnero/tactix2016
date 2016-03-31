@@ -8255,6 +8255,7 @@ hr {
 }
 
 
+
 .word {
   // width: 791px;
   opacity:0;
@@ -8310,21 +8311,32 @@ hr {
     text-align: center;
 }
 
+
+
 @media screen and (max-width: 1000px) {
           .modal-dialog {
               width: 80%;
-           height:80%;
+           
             left: 10%;
             top: -70%;
-              background-color: #000000;
+              
             
           }
 
-          .modal-body {
-            height:100%;
+          .biodialog {
+            height:80%;
             background-color: #000000;
           }
 
+
+          .biodialog-body{
+            height:100%;
+          }
+
+
+
+
+  
 
           .word {
             bottom:0%;
@@ -8338,7 +8350,7 @@ hr {
 
             bottom:-5%;
             padding:1em;
-            left:43%;
+            left:41%;
               font-size: 1.1em;
           }
 
@@ -8346,7 +8358,7 @@ hr {
 
             bottom:-10%;
             padding:1em;
-            left:43%;
+            left:41%;
               font-size: 1.1em;
           }
 
@@ -8396,6 +8408,12 @@ hr {
 .trainingword 
 {
   font-size:1.5em;
+ opacity:0;
+}
+
+.contactword 
+{
+  font-size:1.1em;
  opacity:0;
 }
 
