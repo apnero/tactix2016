@@ -8409,7 +8409,7 @@ p.trainingword{
 
 .form-style-4{
     width: 100%;
-    font-size: 16px;
+    font-size: 1.1em;
     // background: #495C70;
     padding: 30px 30px 15px 30px;
     // border: 5px solid #53687E;
@@ -8421,8 +8421,8 @@ p.trainingword{
 .form-style-4 textarea,
 .form-style-4 label
 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 16px;
+    // font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.1em;
     // color: #fff;
     color:#000000;
 }
@@ -8433,7 +8433,7 @@ p.trainingword{
 .form-style-4 label > span{
     display: inline-block;
     // float: left;
-    width: 50%;
+    width: 40%;
 }
 .form-style-4 input[type=text],
 .form-style-4 input[type=email] 
@@ -8441,7 +8441,7 @@ p.trainingword{
     background: transparent;
     border: none;
     border-bottom: 1px dashed #83A4C5;
-    width: 50%;
+    width: 60%;
     outline: none;
     padding: 0px 0px 0px 0px;
     font-style: italic;
@@ -8453,7 +8453,7 @@ p.trainingword{
     outline: none;
     border: none;
     border-bottom: 1px dashed #83A4C5;
-    width: 50%;
+    width: 60%;
     overflow: hidden;
     resize:none;
     height:20px;
