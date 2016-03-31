@@ -8514,6 +8514,12 @@ p.scheduleword {
  
 }
 
+.contactmodal{
+  padding: 5%;
+  background-color: #000;
+ 
+}
+
 .trainingword 
 {
   font-size:1.5em;
@@ -8524,6 +8530,12 @@ p.scheduleword {
 {
   font-size:1.1em;
  opacity:0;
+}
+
+h1.contactword 
+{
+  color: #FFF;
+  font-size:1.2em;
 }
 
 p.trainingword{
@@ -8557,7 +8569,7 @@ p.trainingword{
     width: 100%;
     font-size: 1.1em;
     // background: #495C70;
-    padding: 30px 30px 15px 30px;
+    padding: 10px 20px 10px 20px;
     // border: 5px solid #53687E;
 }
 .form-style-4 input[type=submit],
@@ -8615,7 +8627,7 @@ p.trainingword{
 
 .form-style-4 input[type=submit],
 .form-style-4 input[type=button]{
-    background: #576E86;
+    // background: #576E86;
     border: none;
     padding: 8px 10px 8px 10px;
     border-radius: 5px;
