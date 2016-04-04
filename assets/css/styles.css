@@ -8231,7 +8231,7 @@ hr {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
-  top: 10%;
+  top: 8%;
 }
 
 .modal-dialog {
@@ -8498,7 +8498,7 @@ h1.contactword
           .modal-dialog {
               width: 80%;
            
-            left: 10%;
+            left: 8%;
             top: -70%;
               
             
