@@ -8272,8 +8272,11 @@ hr {
 }
 
 .wordbtn{
-  opacity: 0;
-}
+  opacity: 0;   
+  font-size: 16px;
+    position: absolute;
+    margin-left: -70px;
+  }
 
 .trainingword {
   // width: 791px;
@@ -8410,6 +8413,120 @@ p.scheduleword {
 
 
           .word {
+            bottom:-1%;
+            padding:2em;
+              font-size: 1.5em;
+
+          }
+
+          .trainingword {
+            // bottom:31%;
+            padding:0em 2em .5em 2em;
+            margin: 0;
+              font-size: 1.5em;
+
+          }
+
+
+          p.trainingword {
+            // bottom:15%;
+            padding: .5em 2em 1em 2em;
+
+              font-size: 1.5em;
+            // padding-left: 1.5em;
+            // padding-right: 1.5em;
+
+          }
+
+           .scheduleword {
+            // bottom:35%;
+            padding:0em;
+            
+              font-size: 1.5em;
+              margin:0;
+
+          }
+
+
+          p.scheduleword {
+            // bottom:7%;
+            padding:.5em;
+            padding-left: 2em;
+            padding-right: 2em;
+              font-size: 1.5em;
+
+          }
+
+
+            .biobutton {
+
+            bottom:-3%;
+            // padding:1em;
+            left:39%;
+              font-size: 1.1em;
+          }
+
+            .trainingbutton {
+
+            bottom:-3%;
+            // padding:1em;
+            left:39%;
+              font-size: 1.1em;
+          }
+
+                    .contactbutton {
+
+            bottom:-7%;
+            // padding:1em;
+            left:39%;
+              font-size: 1.1em;
+          }
+
+        .contactword 
+        {
+          font-size:1.5em;
+         opacity:0;
+        }
+
+
+      h1.contactword 
+      {
+        color: #FFF;
+        font-size:1.6em;
+      }
+
+
+
+
+@media screen and (max-width: 1600px) {
+          .biodialog-body{
+            height:100%;
+          }
+
+
+          .modal-dialog {
+              // width: 80%;
+           
+            // left: 10%;
+            // top: -70%;
+              
+            
+          }
+
+          .biodialog {
+            height:80%;
+            background-color: #000000;
+          }
+
+
+          .biodialog-body{
+            height:100%;
+          }
+
+
+
+
+          .word {
             bottom:2%;
             padding:1.2em;
               font-size: 1.5em;
@@ -8437,7 +8554,7 @@ p.scheduleword {
 
            .scheduleword {
             bottom:31%;
-            padding:.5em;
+            padding:0em;
             
               font-size: 1.5em;
               margin:0;
@@ -8447,7 +8564,7 @@ p.scheduleword {
 
           p.scheduleword {
             bottom:7%;
-            padding:.5em;
+            padding:0em;
             padding-left: 1.5em;
             padding-right: 1.5em;
               font-size: 1.5em;
@@ -8486,10 +8603,12 @@ p.scheduleword {
         }
 
 
-h1.contactword 
-{
-  color: #FFF;
-  font-size:1.6em;
+      h1.contactword 
+      {
+        color: #FFF;
+        font-size:1.6em;
+      }
+
 }
 
 
