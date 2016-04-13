@@ -1688,6 +1688,9 @@ img.mfp-img {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
+
+
+
 .moto-container_content_56260252 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1813,7 +1816,7 @@ img.mfp-img {
 @media screen and (max-width: 1000px) {
   .moto-container_header_5625f0e6 {
     background-image: url('../image/titlesmall.jpg');
-    height:465px
+    height:400px
   }
 }
 
